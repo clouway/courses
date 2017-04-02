@@ -30,6 +30,7 @@
     * търсене на елемент в дървото.  
 
     Example Usage:
+
     ```java
     Tree tree = new Tree();
     tree.add(30);
