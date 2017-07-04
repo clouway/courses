@@ -3,6 +3,7 @@
 ### Required Reading  
  * http://docs.oracle.com/javase/tutorial/java/javaOO/index.html
  * http://docs.oracle.com/javase/tutorial/java/IandI/index.html
+ * [Class Diagrams](https://en.wikipedia.org/wiki/Class_diagram)
  * Tools - [PlantUML](http://plantuml.sourceforge.net/)
 
 ### Задачи  
