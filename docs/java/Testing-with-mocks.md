@@ -10,6 +10,7 @@ http://www.jmock.org/getting-started.html
 [SOLID Principles Explained](https://android.jlelse.eu/solid-principles-the-definitive-guide-75e30a284dea#.33zl10fvp)  
 [SOLID Principles in real world](https://dzone.com/articles/the-solid-principles-in-real-life)  
 [Bible Books](https://drive.google.com/folderview?id=0B9XARH7wTEN4RndBYi1iTkNFbWs&usp=sharing)  
+[Test Doubles - fake, mock, stub](https://blog.pragmatists.com/test-doubles-fakes-mocks-and-stubs-1a7491dfa3da)
 
 *Note:* Alternatives of jmock are EasyMock and Mockito, but we use in our projects only jmock.  
 
