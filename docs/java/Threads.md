@@ -6,6 +6,8 @@
 [Lock](http://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/Lock.html)  
 [Producer Consumer Pattern Explained](http://docs.oracle.com/javase/tutorial/essential/concurrency/guardmeth.html)    
 [Monitor vs Reentrant Lock vs Synchronized](http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/util/concurrent/Monitor.html)    
+[Java Concurrency in Practice](https://drive.google.com/file/d/0B9XARH7wTEN4amJDYk1GZmtoaDA/view?usp=sharing)
+
 ### Задачи  
 
 1. Да се направи програма, в която се стартира нишка отброяваща до зададена стойност.  
