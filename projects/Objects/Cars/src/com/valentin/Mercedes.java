@@ -6,3 +6,4 @@ public class Mercedes extends Car {
         super(maxVelocity, color, year);
     }
 }
+//

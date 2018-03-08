@@ -7,6 +7,7 @@ public class Main {
 
         ElementsClass elementsClass=new ElementsClass(n);
 
+
         Integer s=5;
         Double h=8.2123;
         Object obj=h+s;
@@ -35,3 +36,4 @@ public class Main {
         elementsClass.print();
     }
 }
+////////
