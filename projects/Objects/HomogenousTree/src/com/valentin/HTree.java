@@ -3,8 +3,8 @@ package com.valentin;
 
 public class HTree {
 
-    Node rootNode=new Node();
-    boolean flagContains;
+    private Node rootNode=new Node();
+    private boolean flagContains;
 
     public HTree(){}
 

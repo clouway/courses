@@ -1,8 +1,8 @@
 package com.valentin;
 
 public class Range {
-    Double upper;
-    Double lower;
+    private final Double upper;
+    private final Double lower;
     public Range(Double lower, Double upper){
         this.lower=lower;
         this.upper=upper;
