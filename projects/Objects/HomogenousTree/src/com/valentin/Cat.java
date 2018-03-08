@@ -7,4 +7,3 @@ public class Cat extends Pet{
         this.years=years;
     }
 }
-//

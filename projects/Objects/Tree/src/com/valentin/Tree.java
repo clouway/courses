@@ -25,12 +25,6 @@ public class Tree {
             Node currentNode=new Node(x);
 
 
-            /////  It works without using of Vectors or Lists. I thought
-            ////   that the initialisation of a new Node  with the same
-            ///    variable name will overwrite the previous Node, but it is just
-            //     a variable name, not object
-
-
             currentNode.parent=null;
             currentNode.leftChild=null;
             currentNode.rightChild=null;

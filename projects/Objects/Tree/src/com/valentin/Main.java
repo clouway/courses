@@ -1,7 +1,5 @@
 package com.valentin;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class Main {
 
         tree.print();
 
-        boolean numbContain=tree.contains(randomNumber);
+        tree.contains(randomNumber);
     }
 }
 //

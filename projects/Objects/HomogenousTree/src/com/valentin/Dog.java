@@ -9,4 +9,3 @@ public class Dog extends Pet {
         this.color=color;
     }
 }
-//
