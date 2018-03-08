@@ -3,24 +3,24 @@ package com.valentin;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ElementsClass {
+public class FixedList {
     private int length;
     private List<Object> objectList=new ArrayList<>();
-    public ElementsClass(int length){
+    public FixedList(int length){
         this.length =length;
     }
 
-    public void add(Object object) throws OutOfRange {
+    public void add(Object object) throws OutOfRangeException {
         if (objectList.size()<length)
             objectList.add(object);
-        else throw new OutOfRange("Entered more than "+length+" elements");
+        else throw new OutOfRangeException("Entered more than "+length+" elements");
 
     }
     
-    public void remove() throws EmpyList{
+    public void remove() throws ListIsEmptyException {
         if (!objectList.isEmpty())
             objectList.remove(objectList.size()-1);
-        else throw new EmpyList("The list is already empty");
+        else throw new ListIsEmptyException ("The list is already empty");
     }
     
     public void print(){

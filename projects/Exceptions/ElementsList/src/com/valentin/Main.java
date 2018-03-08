@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         int n=5;
 
-        ElementsClass elementsClass=new ElementsClass(n);
+        FixedList fixedList =new FixedList(n);
 
 
         Integer s=5;
@@ -14,26 +14,26 @@ public class Main {
         Object obj2=obj+"d";
         Object obj3="text";
 
-        elementsClass.add(s);
-        elementsClass.add(h);
-        elementsClass.add(obj);
-        elementsClass.add(obj2);
-        elementsClass.add(obj3);
+        fixedList.add(s);
+        fixedList.add(h);
+        fixedList.add(obj);
+        fixedList.add(obj2);
+        fixedList.add(obj3);
 
-        elementsClass.print();
+        fixedList.print();
 
-        elementsClass.remove();
-        elementsClass.print();
-        elementsClass.remove();
-        elementsClass.print();
-        elementsClass.remove();
-        elementsClass.print();
-        elementsClass.remove();
-        elementsClass.print();
-        elementsClass.remove();
-        elementsClass.print();
-        elementsClass.remove();
-        elementsClass.print();
+        fixedList.remove();
+        fixedList.print();
+        fixedList.remove();
+        fixedList.print();
+        fixedList.remove();
+        fixedList.print();
+        fixedList.remove();
+        fixedList.print();
+        fixedList.remove();
+        fixedList.print();
+        fixedList.remove();
+        fixedList.print();
     }
 }
 ////////
