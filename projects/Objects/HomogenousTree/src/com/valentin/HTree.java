@@ -1,10 +1,8 @@
 package com.valentin;
 
 
-import java.util.Vector;
-
 public class HTree {
-    Vector<Node> nodesVector=new Vector();
+
     Node rootNode=new Node();
     boolean flagContains;
 
@@ -12,26 +10,24 @@ public class HTree {
 
     /**
      *
-     * @param object
+     * @param key
      * @param value
+     * @return
      */
-    public void add(Object object,int value){
-        Node currentNode=new Node(object,value);
-        if (!nodesVector.isEmpty()){
-            if (contains(value)){
-                System.out.println("this value is already used");
-                return;
+    public boolean add(Integer key,Object value){
+        Node currentNode=new Node(key,value);
+        if (rootNode.value!=null){
+            if (contains(key)){
+                return false;
             }else {
-                currentNode.indexInVector=nodesVector.size();
-                nodesVector.addElement(currentNode);
                 arrangeNodes(currentNode,rootNode);
+                return true;
             }
         }else {
             currentNode.value=value;
-            currentNode.object=object;
-            currentNode.indexInVector = 0;
+            currentNode.key=key;
             rootNode=currentNode;
-            nodesVector.addElement(rootNode);
+            return true;
         }}
 
     /**
@@ -40,12 +36,11 @@ public class HTree {
      * @param currentRoot
      */
     private void arrangeNodes(Node currentNode,Node currentRoot){
-        if (currentRoot.value>currentNode.value){
+        if (currentRoot.key>currentNode.key){
             if (currentRoot.leftChild==null){
                 currentRoot.leftChild=currentNode;
                 currentNode.parent=currentRoot;
-                nodesVector.set(currentRoot.indexInVector,currentRoot);
-                nodesVector.set(currentNode.indexInVector,currentNode);
+
             }else {
                 arrangeNodes(currentNode,currentRoot.leftChild);
             }
@@ -53,8 +48,6 @@ public class HTree {
             if (currentRoot.rightChild==null){
                 currentRoot.rightChild=currentNode;
                 currentNode.parent=currentRoot;
-                nodesVector.set(currentRoot.indexInVector,currentRoot);
-                nodesVector.set(currentNode.indexInVector,currentNode);
             }else {
                 arrangeNodes(currentNode,currentRoot.rightChild);
             }
@@ -67,10 +60,10 @@ public class HTree {
      * @param x
      */
     private void containsHelper(Node root,int x){
-        if (root.value==x){
+        if (root.key==x){
             flagContains=true;
 
-        }else if (root.value>x){
+        }else if (root.key>x){
             if (root.leftChild!=null){
                 containsHelper(root.leftChild,x);
             }
@@ -81,19 +74,6 @@ public class HTree {
         }
     }
 
-    public void printTree(){
-        for(int i=0;i<=(nodesVector.size()-1);i++){
-            System.out.println("-----------------");
-            Node tempNode=nodesVector.get(i);
-            System.out.println("Node: "+tempNode.object);
-            System.out.println("NodeValue: "+tempNode.value);
-            if(tempNode.parent!=null) System.out.println("Parrent: "+tempNode.parent.value);
-            if (tempNode.leftChild!=null) System.out.println("LeftCh: "+tempNode.leftChild.value);
-            if (tempNode.rightChild!=null) System.out.println("rightCh: "+tempNode.rightChild.value);
-            System.out.println("-----------------");
-            System.out.println("\n");
-        }
-    }
 
     public void print(){
         printHelper(rootNode);
@@ -108,7 +88,7 @@ public class HTree {
         if (root==null)return;
         printHelper(root.leftChild);
 
-        System.out.println(root.object);
+        System.out.println(root.value);
 
         printHelper(root.rightChild);
     }
@@ -126,20 +106,17 @@ public class HTree {
     }
 
     private class Node{
-        Integer indexInVector;
         Node leftChild;
         Node rightChild;
         Node parent;
-        int value;
-        Object object;
+        Integer key;
+        Object value;
 
         private Node(){}
 
-        private Node(Object object,int value){
-            this.object=object;
+        private Node(Integer key, Object value){
+            this.key=key;
             this.value=value;
         }
     }
 }
-//
-

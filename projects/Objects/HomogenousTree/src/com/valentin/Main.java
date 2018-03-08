@@ -9,14 +9,14 @@ public class Main {
         Cat cat=new Cat("Moncho",5,4);
 
         HTree tree=new HTree();
+
         tree.add(a,a);
-        tree.add(b,2);
-        tree.add(dog,dog.weight);
-        tree.add(cat,cat.weight);
-        tree.printTree();
+        tree.add(2,b);
+        tree.add(dog.weight,dog);
+        tree.add(cat.weight,cat);
+
         tree.print();
 
 
     }
 }
-//
