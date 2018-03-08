@@ -13,27 +13,22 @@ public class Main {
      */
     public static void main(String[] args) {
         int[] commonArr = {23,4,54,65,7};
+        int a=4;
+        int b=5;
 
-        //biggest common divider of 4 and 5
-        math.biggestCommonDiv(4,5);
+        System.out.printf("The BCD of %d and %d is %d \n ",a,b,math.biggestCommonDiv(a,b));
 
-        //greatest common divider of 4 and 5
-        math.greatestCommonDiv(4,5);
+        System.out.printf("The GCD of %d and %d is %d \n ", a,b,math.greatestCommonDiv(a,b));
 
-        //Printing the array
         arrClass.printArr(commonArr);
 
-        //The min element
-        arrClass.getMinElement(commonArr);
+        System.out.printf("The min element: %d \n",arrClass.getMinElement(commonArr));
 
-        //The sum of the elements
-        arrClass.getSum(commonArr);
+        System.out.printf("The sum: %d \n",arrClass.getSum(commonArr));
 
-        //The sorted Array
-        quickSort.quickSort(commonArr);
+        arrClass.printArr(quickSort.quickSort(commonArr));
 
-        //The reversed Array
-        reverseArray.reverseArray(commonArr);
+        arrClass.printArr(reverseArray.reverseArray(commonArr));
 
         }
     }

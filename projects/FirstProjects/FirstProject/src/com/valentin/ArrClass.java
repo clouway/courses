@@ -27,7 +27,7 @@ public class ArrClass {
      * @return
      */
 
-    int getSum(int [] array){
+    public int getSum(int [] array){
         int sum=0;
         for(int i=0;i<array.length;i++){
             sum+=array[i];
@@ -39,7 +39,7 @@ public class ArrClass {
      *
      * @param array
      */
-    void printArr(int [] array){
+    public void printArr(int [] array){
         String arr="";
         for(int i=0;i<array.length;i++){
             arr+=" "+array[i];
@@ -48,4 +48,3 @@ public class ArrClass {
         System.out.println("The array is: "+arr);
     }
 }
-///

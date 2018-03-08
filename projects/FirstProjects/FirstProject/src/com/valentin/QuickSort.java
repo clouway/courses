@@ -7,6 +7,14 @@ public class QuickSort {
 
     public QuickSort(){}
 
+
+    public int[] quickSort(int[] arr){
+        int[] arrCopy= Arrays.copyOf(arr,arr.length);
+        sort(arrCopy,0,(arr.length)-1);
+        return arrCopy;
+    }
+
+
     /**
      *
      * @param arr
@@ -60,9 +68,5 @@ public class QuickSort {
             sort(arr,pos,highIndex);
         }
     }
-    public int[] quickSort(int[] arr){
-        int[] arrCopy= Arrays.copyOf(arr,arr.length);
-        sort(arrCopy,0,(arr.length)-1);
-        return arrCopy;
-    }
+
 }

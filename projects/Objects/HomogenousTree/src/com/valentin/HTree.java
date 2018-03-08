@@ -6,7 +6,9 @@ public class HTree {
     private Node rootNode=new Node();
     private boolean flagContains;
 
+
     public HTree(){}
+
 
     /**
      *
@@ -29,6 +31,29 @@ public class HTree {
             rootNode=currentNode;
             return true;
         }}
+
+
+
+
+    /**
+     *
+     * @param x
+     * @return
+     */
+    public boolean contains(int x){
+        flagContains=false;
+        containsHelper(rootNode,x);
+        return flagContains;
+    }
+
+
+    /**
+     *
+     */
+    public void print(){
+        printHelper(rootNode);
+    }
+
 
     /**
      *
@@ -75,11 +100,6 @@ public class HTree {
     }
 
 
-    public void print(){
-        printHelper(rootNode);
-    }
-
-
     /**
      *
      * @param root
@@ -96,15 +116,7 @@ public class HTree {
 
     /**
      *
-     * @param x
-     * @return
      */
-    public boolean contains(int x){
-        flagContains=false;
-        containsHelper(rootNode,x);
-        return flagContains;
-    }
-
     private class Node{
         Node leftChild;
         Node rightChild;

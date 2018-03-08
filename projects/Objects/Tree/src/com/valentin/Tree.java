@@ -10,6 +10,9 @@ public class Tree {
 
     public Tree(){}
 
+
+
+
     /**
      *
      * @param x
@@ -24,7 +27,6 @@ public class Tree {
 
             Node currentNode=new Node(x);
 
-
             currentNode.parent=null;
             currentNode.leftChild=null;
             currentNode.rightChild=null;
@@ -38,6 +40,28 @@ public class Tree {
             return true;
         }
     }
+
+
+    /**
+     *
+     * @param x
+     * @return
+     */
+    public boolean contains(int x){
+        flagContains=false;
+        containsHelper(rootNode,x);
+        return flagContains;
+    }
+
+
+    /**
+     *
+     */
+    public void print(){
+        printHelper(rootNode);
+
+    }
+
 
     /**
      *
@@ -68,10 +92,6 @@ public class Tree {
     }
 
 
-    public void print(){
-        printHelper(rootNode);
-
-    }
 
     /**
      *
@@ -108,19 +128,6 @@ public class Tree {
     }
 
 
-    /**
-     *
-     * @param x
-     * @return
-     */
-    public boolean contains(int x){
-        flagContains=false;
-        containsHelper(rootNode,x);
-        return flagContains;
-    }
-
-
-
     private class Node{
         Node leftChild;
         Node rightChild;
@@ -129,6 +136,10 @@ public class Tree {
 
         private Node(){}
 
+        /**
+         *
+         * @param value
+         */
         private Node(Integer value){
             this.value=value;
         }

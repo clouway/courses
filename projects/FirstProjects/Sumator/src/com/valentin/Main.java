@@ -2,13 +2,11 @@ package com.valentin;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Sumator sumator=new Sumator();
-
 
         BigInteger A=new BigInteger("1234567");
         BigInteger B=new BigInteger("1233688");
@@ -21,26 +19,5 @@ public class Main {
         System.out.println(sumator.sum(D,F));
         System.out.println(sumator.sum(A,B));
 
-
-
-             /*   Scanner scanner=new Scanner(System.in);
-           StringToInt stringToInt=new StringToInt();
-        while (true){
-        System.out.print("Enter number: ");
-        String input=scanner.next();
-        if (stringToInt.check(input)){
-            int a=Integer.parseInt(input);
-            System.out.print("One more: ");
-            input=scanner.next();
-            if (stringToInt.check(input)){
-                int b=Integer.parseInt(input);
-                System.out.println("----------");
-                System.out.println("The sum is: "+ sumator.sum(a,b)+"\n");
-            }
-        }
-        }*/
-
-
     }
 }
-//

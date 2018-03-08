@@ -30,4 +30,3 @@ public class Sumator {
         return C;
     }
 }
-//

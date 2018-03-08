@@ -13,9 +13,12 @@ public class Main {
         tree.add(55);
         tree.add(60);
 
+        if (tree.add(60)) System.out.print("Added");
+        else System.out.print("It is already added");
+
         tree.print();
 
-        tree.contains(randomNumber);
+        if (tree.contains(randomNumber)) System.out.print("Yes\n");
+        else System.out.print("No\n");
     }
 }
-//
