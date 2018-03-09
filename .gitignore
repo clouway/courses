@@ -1,12 +1,15 @@
 *.class
 
-/projects/out/
+**/out/
 
 .mtj.tmp/
 
 *.jar
 *.war
 *.ear
+
+**.idea
+**.iml
 
 *.idea/workspace.xml
 *.idea/tasks.xml
