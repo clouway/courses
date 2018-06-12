@@ -39,8 +39,8 @@ java -jar messagepreview.jar -type json message.json --printAverageStats
 
 където message.json: 
 
-```text
-[{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34},{firstName: “John”, lastName: “Smith”, age: 34}]
+```javascript
+{"personList":[{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34},{"firstName": "John", "lastName": "Smith", age: 34}]}
 ```
 
 a резултатът Ðµ статистически данни за обектите, който се печата в конзолата 
